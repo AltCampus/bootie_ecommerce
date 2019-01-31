@@ -164,5 +164,159 @@ h6 {
 .clearfix {
 	*zoom: 1;
 }
-
+/*******************/
 /* Header Styles */
+.banner {
+	background: url("./../media/banner.jpg") center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: white;
+}
+.header {
+	padding: 3rem;
+}
+.nav-head {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0px;
+	font-size: inherit;
+	text-rendering: auto;
+}
+.nav-head a {
+	color: white;
+}
+.nav-head h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.nav-head li {
+  display: inline-block;
+	margin: 0px 20px;
+}
+.nav-head .active {
+	color: #ff4c4c;
+}
+.nav-head a:hover {
+	color: #FF4C4C;
+  border-radius: 5px;
+	cursor: pointer;
+	transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear, ease-in;	
+}
+/*Dropdown*/
+.drop-link {
+	position: relative;
+}
+.drop-box {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	padding-top: 20px;
+}
+.drop-menu {
+	background:#ffffff;
+	border-radius: 6px;
+	padding: 20px 20px;
+	text-align: left;
+	width: 200px;
+	display: none;
+}
+.drop-menu li {
+	display: block;
+	margin: 0;
+}
+.drop-menu li a {
+	display: block;
+	background: none;
+	padding: 0;
+	margin: 10px 0px;
+	color: black;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.drop-link:hover .drop-menu {
+	display: block;
+}
+.drop-menu li a:hover {
+	background: none;
+	color: #FF4C4C;
+	background: #F8F9FA;
+}
+/* Banner-info */
+.banner-info {
+	padding: 4em 0 0em 3em;
+	width: 38%;
+}
+.banner-buttons {
+	padding-bottom: 12rem;
+}
+
+.banner-info p {
+	color: #fff;
+	font-size: 0.8em;
+	letter-spacing: 1.0;
+	font-weight: 400;
+	margin: 0;
+	text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+}
+.banner-info h3 {
+	font-size: 3.5em;
+	letter-spacing: 1.0;
+	text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+	margin-bottom:  1.5rem;
+}
+.banner-info .btn {
+	padding: 11px 31px;
+	border-radius: 0px;
+	font-weight: 600;
+	box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.5);
+	color:#ff4c4c;
+	background: #ffffff;
+}
+.banner-info .read-btn {
+	background: #10A6FB;
+	color: #f7f7f7;
+}
+/******Feature's Section */
+.features-section {
+	background: #FFFFFF;
+	grid-template-columns: repeat(4, minmax(350, 1fr));
+	display: inline-grid;
+	grid-gap: 30px;
+	padding: 2rem;
+	grid-template-areas: "one two three four"
+}
+.icon-content {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	font-size: 22px;
+	line-height: 1.5;
+	letter-spacing: 0.8px;
+	margin-top: 30px;
+	background:#F8F9FA; 
+	padding: 3rem 1.5rem;
+	margin-bottom: 2.5rem;
+	box-shadow:7px 7px 10px 0 rgba(76, 110, 245, .1);
+}
+.icons {
+	margin-right: 20px;
+	font-size: 2rem;
+	color: #FF4C4C;
+}
+.icon-content-bullborn {
+	background: 	#FF4C4C;
+	color: white;
+ }
+ .fa-bullhorn {
+	color: white;
+} 
+.icon-h3 {
+	font-size: 0.7em;
+	color: #1e272e;
+	font-weight: 600;
+}
+.icon-content p {
+	font-size: 1rem;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
