@@ -174,11 +174,10 @@ footer {
 	height: 600px;
 	width: 100%;
 	padding: 2.5rem;
-
 }
 .remark {
 	width: 33.3%;
-	margin-left: 2.5rem;
+	margin-left: 5rem;
 }
 .remark h3 {
 	color: var(--body-text-two);
@@ -282,7 +281,7 @@ footer {
 	color: #5e5e61;
 	text-transform: uppercase;
 	font-size: 0.8rem;
-	padding: 0.625rem 0;
+	padding: 0.3rem 0;
 }
 .links h5 {
 	text-transform: uppercase;
@@ -290,7 +289,6 @@ footer {
 .copy-container {
 	display: flex;
 	flex-direction: row;
-
 }
 .copyright {
 	width: 100vw;
@@ -310,7 +308,185 @@ footer {
 	margin-right: 8rem;
 }
 
+/*************Styling for Blog***********/
+.blog {
+	background: #fff;
+	margin: 0 auto;
+}
+.blog h2 {
+	text-align: center;
+	padding: 20px;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	color: #292a2b;
+}
+.blog-container {
+	display: grid;
+	grid-gap: 1.8rem;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-rows: repeat(2, 1fr);*/
+  padding: 30px;
+}
+.more {
+	color: red;
+	background: #fff;
+	font-size: 0.8rem;
+	height: 2.2rem;
+	width: 6rem;
+	border: 1px solid #fff;
+	box-shadow: 0 12px 60px rgba(0, 0, 0, .2);
+	position: absolute;
+	bottom: 20px;
+	right: 8px;
+	text-transform: uppercase;
+	padding: 10px;
+	font-weight: 500;
+}
+.post1, 
+.post2, 
+.post3,
+.post4,
+.post5,
+.post6 {
+	border: 1px solid #00000020;
+	align-self: start;
+	border-radius: 5px;
+	display: grid;
+	position: relative;
+}	
+.blog-wrapper {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+.blog-container h5 {
+	padding: 20px;
+}
+.blog-container p,
+.blog-container small
+ {
+	padding: 0 20px 20px 20px;
+	color: #8c9398;
+	letter-spacing: 1px;
+	font-size: 0.9rem;
+}
+.blog-container small {
+	font-size: 1.25rem;
+	font-weight: 300;
+}
 
+/* Contact Styling */
 
+.contact-wrapper {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+.contact-container {
+	display: grid;
+	grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+.form-contact {
+	display: block;
+}
+.contact-container input {
+	display: block;
+}
+.contact-container .name,
+.contact-container .email,
+.contact-container .number {
+	width: 100%;
+	height: 3rem;
+	padding: 0.4rem;
+	font-size: 0.9rem;
+	background: #f0f1f3;
+	font-family: var(--font-family-sans-serif);
+	letter-spacing: 0.08rem;
+	margin: 12px;
+}
+.contact-container textarea {
+	width: 100%;
+	height: 10rem;
+	padding: 0.4rem;
+	font-size: 0.9rem;
+	background: #f0f1f3;
+	font-family: var(--font-family-sans-serif);
+	letter-spacing: 0.08rem;
+	margin: 10px;
+}
+.contact-wrapper h6 {
+	color: #ccc;
+	font-weight: 300;
+}
+.contact-wrapper h2 {
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+ul .phone,
+ul .mail {
+	padding-bottom: 20px;
+	color: #8c9398;
+	/*margin-top: 10px;*/
+}
+.contact-container .links small {
+	font-size: 0.9rem;
+	font-family: 'Lato', sans-serif;
+	padding: 20px 0;
+	margin: 10px 0;
+}
+.contact-wrapper .submit {
+	color: #fff;
+	background: black;
+	font-size: 0.9rem;
+	height: 2.8rem;
+	width: 9rem;
+	border: 1px solid #fff;
+	padding: 10px;
+	font-weight: 500;
+	margin: 10px;
+}
+iframe {
+	border: 5px solid #ccc;
+	margin: 20px;
+}
 
+/* Responsive Styling */
 
+/*.post1 {
+	grid-area: "one"
+}
+.post2 {
+	grid-area: "two"
+}
+.post3 {
+	grid-area: "three"
+}*/
+
+@media screen and (max-width: 768px) {
+	.blog-container {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		/*grid-template-areas: 
+		"three"
+		"two"
+		"one"*/
+	}
+	footer {
+		height: 100%;
+		margin: 10px 0;
+		padding: 0;
+	}
+	.footer {
+		flex-direction: column;
+	}
+	.news-wrapper .links-container {
+		display: block;
+		margin: 10px 0;
+		padding: 0;
+	}
+	.email input {
+		width: 100%;
+		height: 2.5rem;
+} 
