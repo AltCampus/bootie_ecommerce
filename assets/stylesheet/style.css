@@ -313,7 +313,8 @@ h6 {
 	color: rgb(154, 153, 153);
 }
 
-/*========== Shop Now Section ===========*/
+/*========== Responsive Design for Arrival
+ and Popular Products section ===========*/
 
 @media all  and (max-width: 768px) {
 	.quote {
