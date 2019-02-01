@@ -179,6 +179,7 @@ h6 {
 .nav-head {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 10px 0px;
 	font-size: inherit;
 	text-rendering: auto;
@@ -283,25 +284,25 @@ h6 {
 	background: #FFFFFF;
 	grid-template-columns: repeat(4, minmax(350, 1fr));
 	display: inline-grid;
-	grid-gap: 30px;
+	grid-gap: 1.9rem;
 	padding: 2rem;
 	grid-template-areas: "one two three four"
 }
 .icon-content {
 	display: grid;
 	grid-template-columns: auto 1fr;
-	font-size: 22px;
+	font-size: 1.35rem;
 	line-height: 1.5;
 	letter-spacing: 0.8px;
 	margin-top: 30px;
 	background:#F8F9FA; 
-	padding: 3rem 1.5rem;
+	padding: 3rem 2rem;
 	margin-bottom: 2.5rem;
 	box-shadow:7px 7px 10px 0 rgba(76, 110, 245, .1);
 }
 .icons {
 	margin-right: 20px;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	color: #FF4C4C;
 }
 .icon-content-bullborn {
@@ -317,9 +318,10 @@ h6 {
 	font-weight: 600;
 }
 .icon-content p {
-	font-size: 1rem;
+	font-size: 0.95rem;
 	line-height: 1.5;
 	letter-spacing: 1px;
+
 }
 /* about section */
 .about-banner {
@@ -365,4 +367,102 @@ h3 .tittle {
 .about-para {
 	padding: 4rem  8rem ;
 	letter-spacing: 1px;
+}
+.about-text {
+	display: grid;
+	grid-column-start: 1;
+	margin-top: 3.5rem;
+}
+.about-text h3 {
+	margin-bottom: 1.2rem;
+}
+.features {
+	padding: 3rem;
+}
+.features h3 {
+	letter-spacing: 1px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+}
+/**************************
+********** Promotion Section************/
+.promotion-section {
+	background: #F7F7F7;
+	padding: 4rem 5rem;
+}
+.promotion-container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 5rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.promotion-img {
+	background: rgb(184, 180, 180);
+	padding: 5px;
+	border-radius: 6px;
+	grid-area: "one"	
+}
+.pomotion-content {
+	grid-area: "two"
+}
+ul .check-mark {
+ color: #FF0000;
+ margin-right: 0.8rem;
+}
+.h3-promotion {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.2rem;
+}
+.pro-sub-tittle {
+	font-size: 0.7rem;
+	color: #919aa0;
+	letter-spacing: 0.15rem;
+	display: flex;
+}
+.promotion-content p , li{
+	font-size: 0.9em;
+	color: #8c9398;
+	line-height: 2em;
+	letter-spacing: 1px;
+}
+.promotion-content p, ul {
+	margin-top: 2.5rem;
+}
+.h3-promotion{
+	font-size: 2.5rem;
+}
+/* services content */
+.services {
+	background: #FFFFFF;
+	
+}
+.service-container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto; 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.service-container .icon-content {
+	background: #FFFFFF;
+	box-shadow: none;
+}
+.service-container i {
+	color: #007BFF;
+	font-size: 1.5rem;
+}
+.service-container .icon-h3 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 1px;
+}
+.service-container p {
+	margin: 1.7rem 0;
+	letter-spacing: 1px;
+	color: #B0B0B0;
 }
