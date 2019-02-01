@@ -164,7 +164,6 @@ h6 {
 .clearfix {
 	*zoom: 1;
 }
-
 /*******************/
 /* Header Styles */
 .banner {
@@ -423,13 +422,13 @@ ul .check-mark {
 	letter-spacing: 0.15rem;
 	display: flex;
 }
-.promotion-content p , li{
+.promotion-content p, .promotion-content li{
 	font-size: 0.9em;
 	color: #8c9398;
 	line-height: 2em;
 	letter-spacing: 1px;
 }
-.promotion-content p, ul {
+.promotion-content p, .promotion-content ul {
 	margin-top: 2.5rem;
 }
 .h3-promotion{
@@ -465,4 +464,166 @@ ul .check-mark {
 	margin: 1.7rem 0;
 	letter-spacing: 1px;
 	color: #B0B0B0;
+
+}
+
+
+
+/* Arrival Section by KVSN */
+.common-wrapper {
+	max-width: 1150px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+.arrival-heading, .popular-heading {
+	color: #292a2b;
+	font-weight: 600;
+	font-family: "Source Sans Pro", sans-serif;
+	letter-spacing: 2px;
+	margin: 20px;
+}
+.arrival {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 30px;
+	justify-content: center;
+	margin: 30px 0;
+}
+.item {
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #d3d4d8;
+}
+.item .arrival-item-name {
+	padding-top: 5px;
+}
+.arrival-item-name {
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+.arrival-price {
+	font-size: 1em;
+  font-weight: 800;
+  color: #ff4c4c;
+  letter-spacing: 2px;
+}
+.ruler-arrival {
+	margin: 15px 10px;
+	border: 1px dotted #bcbcc0;
+}
+.arrival-button {
+	padding: 5px 14px;
+	background: #414b52;
+	color: #fff;
+}
+.arrival ul {
+	display: flex;
+	justify-content: center;
+}
+.stars a span {
+	font-size: 9px;
+	padding: 5px;
+	color: #6c757d;
+}
+
+/* Testimonials section */
+.testimonials {
+	background: #f2f2f2;
+}
+.testimonials h3 {
+	color: #1e272e;
+	font-size: 14px;
+	font-family: "Source sans pro";
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+.testimonials ul {
+	display: flex;
+	justify-content: center;
+}
+.testimonials .stars span {
+	color: red;
+}
+.quote {
+	display: flex;
+	justify-content: center;
+	width: 60%;
+	margin: 0 auto;
+	padding: 30px;
+
+}
+.quote p {
+	color: #8c9398;
+	letter-spacing: 1px;
+	line-height: 26px;
+}
+.fa-quote-left, .fa-quote-right {
+	color: #505c65;
+	font-size: 20px;
+}
+/* Popular Products Section */
+.popular-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-template-rows: repeat(2, 308px);
+	grid-gap: 30px;
+	justify-content: center;
+	margin: 30px 0;
+}
+.pop-item-1 {
+	grid-row: span 2;
+}
+.pop-item-1 img, .pop-item-2 img {
+	height: 100%;
+}
+.pop-item-2 {
+	display: grid;
+	grid-template-rows: repeat(2, 308px);
+	grid-row-gap: 30px;
+}
+.pop-item-1 a, .pop-item-2 a {
+	color: black;
+}
+.now-parent {
+	position: relative;
+}
+.shop-button {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	font-weight: 600;
+	color: black;
+}
+/* Brand Icons Section */
+.brand-icons-container {
+	background: #1e272e;
+	padding: 20px;
+}
+.brand-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.brand-icons i {
+	font-size: 36px;
+	color: rgb(154, 153, 153);
+}
+
+/*========== Responsive Design for Arrival
+ and Popular Products section ===========*/
+
+@media all  and (max-width: 768px) {
+	.quote {
+		width: 100%;
+	}
+	
+}
+@media all  and (max-width: 630px) {
+	.popular-container {
+		grid-template-rows: repeat(2, 174px);
+	}
 }
