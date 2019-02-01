@@ -168,7 +168,7 @@ h6 {
 /* Header Styles */
 .banner {
 	background: url("./../media/banner.jpg") center;
-	background-size: 100% 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
 }
@@ -318,5 +318,50 @@ h6 {
 .icon-content p {
 	font-size: 1rem;
 	line-height: 1.5;
+	letter-spacing: 1px;
+}
+/* about section */
+.about-banner {
+	height: 28rem;
+}
+ol.breadcrumb {
+	margin: 0;
+	padding: 1rem 2rem;
+}
+.breadcrumb {
+	display: flex;
+	flex-wrap: wrap;
+	color: #888;
+}
+.breadcrumb-item a {
+	color: #FF4C4C;
+	margin-right: 0.3rem;
+}
+li .breadcrumb-item {
+	font-size: 1.2em;
+	letter-spacing: 0.1rem;
+}
+.breadcrumb .active {
+	margin-left: 0.3rem;
+}
+.about-container {
+	width: 100%;
+	background: #F7F7F7;
+}
+h3 .sub-tittle {
+	font-size: 0.7rem;
+	color: #919aa0;
+	letter-spacing: 0.15rem;
+	display: block;
+	padding-top: 5rem;
+}
+
+h3 .tittle {
+	font-size: 4rem;
+	letter-spacing: 0.15rem;
+	color: #292a2b;
+}
+.about-para {
+	padding: 4rem  8rem ;
 	letter-spacing: 1px;
 }
