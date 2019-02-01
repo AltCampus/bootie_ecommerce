@@ -186,7 +186,7 @@ h6 {
 }
 .arrival {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	grid-gap: 30px;
 	justify-content: center;
 	margin: 30px 0;
@@ -233,7 +233,6 @@ h6 {
 /* Testimonials section */
 .testimonials {
 	background: #f2f2f2;
-	padding: 50px 200px;
 }
 .testimonials h3 {
 	color: #1e272e;
@@ -252,6 +251,10 @@ h6 {
 .quote {
 	display: flex;
 	justify-content: center;
+	width: 60%;
+	margin: 0 auto;
+	padding: 30px;
+
 }
 .quote p {
 	color: #8c9398;
@@ -265,7 +268,7 @@ h6 {
 /* Popular Products Section */
 .popular-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	grid-template-rows: repeat(2, 308px);
 	grid-gap: 30px;
 	justify-content: center;
@@ -285,10 +288,13 @@ h6 {
 .pop-item-1 a, .pop-item-2 a {
 	color: black;
 }
-.shop-button {
+.now-parent {
 	position: relative;
-	bottom: 60px;
-	left: 185px;
+}
+.shop-button {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
 	font-weight: 600;
 	color: black;
 }
@@ -307,3 +313,16 @@ h6 {
 	color: rgb(154, 153, 153);
 }
 
+/*========== Shop Now Section ===========*/
+
+@media all  and (max-width: 768px) {
+	.quote {
+		width: 100%;
+	}
+	
+}
+@media all  and (max-width: 630px) {
+	.popular-container {
+		grid-template-rows: repeat(2, 174px);
+	}
+}
