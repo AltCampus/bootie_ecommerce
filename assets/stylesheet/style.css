@@ -168,20 +168,23 @@ h6 {
 /* Header Styles */
 .banner {
 	background: url("./../media/banner.jpg") center;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	color: white;
 }
 .header {
-	padding: 3rem;
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem;
 }
 .nav-head {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 10px 0px;
-	font-size: inherit;
-	text-rendering: auto;
+	/* align-items: center; */
+	/* padding: 10px 0px; */
+	/* font-size: inherit; */
+	/* text-rendering: auto; */
 }
 .nav-head a {
 	color: white;
@@ -204,6 +207,22 @@ h6 {
   transition-duration: 1s;
   transition-timing-function: linear, ease-in;	
 }
+/* .logo {
+	margin: 0;
+} */
+.nav__menu {
+	@extend .nav;
+}
+.nav__link {
+	font-size: 0.9rem;
+	font-weight: bold;
+	/* font-style: bold; */
+	/* margin-left: 2rem; */
+	transition: all 200ms ease-in-out;
+}
+#toggle, .label {
+	display: none;
+}
 /*Dropdown*/
 .drop-link {
 	position: relative;
@@ -213,24 +232,25 @@ h6 {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
-	padding-top: 20px;
+	/* padding-top: 20px; */
 }
 .drop-menu {
 	background:#ffffff;
 	border-radius: 6px;
 	padding: 20px 20px;
 	text-align: left;
-	width: 200px;
+	width: 180px;
 	display: none;
 }
 .drop-menu li {
 	display: block;
+	/* padding-left: 1rem; */
 	margin: 0;
 }
 .drop-menu li a {
 	display: block;
 	background: none;
-	padding: 0;
+	padding: 0.5rem 1rem;
 	margin: 10px 0px;
 	color: black;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -288,7 +308,7 @@ h6 {
 	grid-template-areas: "one two three four"
 }
 .icon-content {
-	display: grid;
+	display: grid; 
 	grid-template-columns: auto 1fr;
 	font-size: 1.35rem;
 	line-height: 1.5;
@@ -903,11 +923,38 @@ iframe {
 }
 
 /* Responsive Styling */
+/* STYLE FOR HAMBURGER */
+@media all and (max-width: 768px) {
+	.label {
+		display: block;
+	}
+	#toggle:checked ~ .nav__menu {
+		display: block;
+	}
+	.nav__menu {
+		display: flex;
+		/* flex-direction: column; */
+		position: absolute;
+		right: 1.0rem;
+		margin-left: 1rem;
+		/* left: auto; */
+		top: 3.5rem;
+		display: none;
+		background: rgba(16, 16, 16, 0.85);
+		padding: 20px;
+	}
+	.nav__link {
+		margin-left: 0;
+		margin-bottom: 3rem;
+		display: block;
+	}
+}
 
 @media screen and (max-width: 768px) {
 	.quote {
 		width: 100%;
 	}
+	.f
 	.blog-container {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		/*grid-template-areas: 
@@ -955,4 +1002,93 @@ iframe {
 	.popular-container {
 		grid-template-rows: repeat(2, 174px);
 	}
+	.banner-buttons {
+		margin-top: 20px;
+		/* padding: 12rem; */
+	}  
+	.banner {
+		background-size:cover;
+	}
+	.banner-info {
+		width: 100%;
+		padding: 1rem 0 0 1rem;
+		margin: 0;
+	}
+	.banner-buttons {
+		padding-top: 1rem;
+		padding-bottom: 3rem;
+	}
+	 .banner-info h3 {
+		font-size: 3.0rem;
+	}  
+	/* .nav-head {
+		padding-bottom: 0;
+	} */
+	.banner-info .btn {
+		/* padding: 2px; */
+		/* margin-top: 20px; */
+		/* border-radius: 0px; */
+		/* font-weight: 600; */
+		/* margin-bottom: 10px; */
+		/* box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.5);  */
+		/*color:#ff4c4c;
+		background: #ffffff; */
+	}
+	.banner-info .read-btn {
+		background: #10A6FB;
+		color: #f7f7f7;
+		/* margin-top: 70px; */
+	} 
+	.about-container h3  {
+		font-size: 1.5rem ;
+		letter-spacing: 1px;
+		font-family: sans-serif;
+		padding: 0;
+		margin: 0;
+	}
+	.about-para {
+		padding: 2rem 3rem; 
+		/* letter-spacing: 1.0;*/
+	  line-height: 1.5;
+		font-size: 0.9em;
+		color: #8c9398;
+		line-height: 2em;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	.features-section {
+		display: grid;
+		grid-template-areas: 
+		"one"
+		"two"
+		"three"
+		"four"
+	}
 }
+/* media query for header
+/* media query 
+
+@media all and (max-width: 1000px) {
+  .nav-head ul {
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+  }
+  .flex-nav li {
+    /* flex: 1 1 50%; */
+ }
+}
+/* @media all and (min-width: 500px) {
+  .nav-head li{
+    flex-basis:100%; 
+	}
+	.icon-content {
+		width: 100%;
+	}
+	.nav-head ul {
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+  }
+}  */
+  
