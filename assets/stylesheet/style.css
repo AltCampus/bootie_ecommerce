@@ -181,7 +181,7 @@ h6 {
 .nav-head {
 	display: flex;
 	justify-content: space-between;
-	/* align-items: center; */
+	align-items: center;
 	/* padding: 10px 0px; */
 	/* font-size: inherit; */
 	/* text-rendering: auto; */
@@ -204,12 +204,13 @@ h6 {
   border-radius: 5px;
 	cursor: pointer;
 	transition-property: color;
-  transition-duration: 1s;
+	transition-duration: 1s;
+	/* transition-delay: 1.5s; */
   transition-timing-function: linear, ease-in;	
 }
-/* .logo {
-	margin: 0;
-} */
+.h1-logo {
+	font-size: 2.0rem;
+}
 .nav__menu {
 	@extend .nav;
 }
@@ -298,6 +299,9 @@ h6 {
 	background: #10A6FB;
 	color: #f7f7f7;
 }
+.secondry-heading {
+	background: rgb(230, 227, 227);
+}
 /******Feature's Section */
 .features-section {
 	background: #FFFFFF;
@@ -357,14 +361,14 @@ ol.breadcrumb {
 }
 .breadcrumb-item a {
 	color: #FF4C4C;
-	margin-right: 0.3rem;
+	padding-right: 0.3rem;
 }
 li .breadcrumb-item {
 	font-size: 1.2em;
 	letter-spacing: 0.1rem;
 }
 .breadcrumb .active {
-	margin-left: 0.3rem;
+	padding-left: 0.3rem;
 }
 .about-container {
 	width: 100%;
