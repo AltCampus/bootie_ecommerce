@@ -643,7 +643,7 @@ footer {
 }
 .remark {
 	width: 33.3%;
-	margin-left: 5rem;
+	padding-left: 5rem;
 }
 .remark h3 {
 	color: var(--body-text-two);
@@ -923,7 +923,6 @@ iframe {
 }
 
 
-
 /* Shop-Now page styles */
 .shop-wrapper {
 	max-width: 1200px;
@@ -944,8 +943,12 @@ iframe {
 .shop-grid {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
+	/* grid-gap: 30px; */
 }
 /* Product Search Bar */
+.col-1-heading {
+	padding-right: 30px;
+}
 .product-search {
 	display: flex;
 }
@@ -953,10 +956,12 @@ iframe {
 	height: 46px;
 	padding: 10px;
 	border: 1px solid lightgray;
+	flex: 0 0 77%;
 }
 .product-search button {
 	background-color: black;
 	padding: 15px 35px;
+	flex: 0 0 22%;
 }
 .product-search button a {
 	color: red;
@@ -1014,7 +1019,93 @@ iframe {
 	color: white;
 }
 
-
+/* Shop Page */
+.single-page-wrapper {
+	max-width: 1100px;
+	width: 55%;
+	margin: 0 auto;
+	/*padding: 20px;*/
+}
+.shop-container {
+	display: grid;
+	grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.25rem;
+}
+.shop-item {
+	border: 1px solid #00000020;
+}
+.shop-info {
+	padding-left: 10px;
+}
+.shop-info h5 {
+	padding-bottom: 15px;
+}
+.shop-info h4 {
+	color: #62676b;
+	font-weight: 400;
+	font-size: 1.3rem;
+	display: inline-block;
+	padding: 0 4px 10px 0;
+}
+.shop-info .cancel {
+	text-decoration: line-through;
+	/*margin-bottom: 20px;*/
+}
+.shop-info a {
+	color: #555555;
+	font-size: 0.8rem;
+	padding-bottom: 20px;
+}
+.shop-info button {
+	background: black;
+	font-size: 0.9rem;
+	color: #ff4c4c;
+	height: 2.75rem;
+	width: 5rem;
+	vertical-align: middle;
+	font-weight: 500;
+}
+.email-wrap {
+	padding-bottom: 20px;
+}
+.shop-info .wishlist {
+	text-decoration: underline;
+	color: #555555;
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+.shop-info p {
+	color: #8c9398;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.product-info h4 {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	color: #323a40;
+	font-size: 1.2rem;
+}
+.product-info p {
+	font-size: 0.9rem;
+	color: #8c9398;
+	letter-spacing: 1px;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+.product-info .product-highlight {
+	color: #89bff3;
+	font-weight: 500;
+	font-style: italic;
+	/*margin: 20px 0;*/
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	line-height: 1.7;
+}
+.product-featured {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
 /* Responsive Styling */
 /* STYLE FOR HAMBURGER */
@@ -1022,6 +1113,9 @@ iframe {
 @media screen and (max-width: 992px) {
 	.shop-grid {
 		grid-template-columns: 1fr;
+	}
+	.shop-wrapper {
+		max-width: 720px !important;
 	}
 }
 
@@ -1055,6 +1149,12 @@ iframe {
 	.blog-container {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
+	.shop-container {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		padding-left: 0;
+		margin-left: 0;
+	}
+	
 	footer {
 		height: 100%;
 		margin: 0.625rem 0;
@@ -1065,7 +1165,7 @@ iframe {
 	}
 	.news-wrapper, .links-container {
 		display: block;
-		margin: 0.625rem 0.625rem;
+		padding: 0.625rem 0.625rem;
 		padding: 0;
 		border-top: none;
 	}
@@ -1073,10 +1173,10 @@ iframe {
 		width: 65%;
 		height: 2.75rem;
 		margin-left: 10px;
-}
+	}
 	.remark, .news-wrapper {
 		width: 100%;
-		margin-left: 0.625rem;
+		padding-left: 0.625rem;
 		border-left: none;
 	} 
 	.arrow {
@@ -1139,6 +1239,6 @@ iframe {
 		"one"
 		"two"
 		"three"
-		"four"
+		"four";
 	}
 }
