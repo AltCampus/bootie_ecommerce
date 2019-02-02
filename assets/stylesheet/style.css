@@ -922,9 +922,110 @@ iframe {
 	margin: 1.25rem;
 }
 
+
+
+/* Shop-Now page styles */
+.shop-wrapper {
+	max-width: 1200px;
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+.shop-wrapper h5 {
+	padding: 10px 0;
+	color: #1e272e;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+.shop-wrapper li {
+	color: #8c9398;
+	padding-bottom: 10px;
+}
+.shop-grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+/* Product Search Bar */
+.product-search {
+	display: flex;
+}
+.product-search input {
+	height: 46px;
+	padding: 10px;
+	border: 1px solid lightgray;
+}
+.product-search button {
+	background-color: black;
+	padding: 15px 35px;
+}
+.product-search button a {
+	color: red;
+}
+.collection-list p {
+	display: inline-block;
+	padding-left: 5px;
+}
+/* Customer Review Section */
+.customer-review-container ul {
+	display: flex;
+}
+.customer-review-container .stars p {
+	color: #858484;
+	font-size: 12px;
+	padding: 5px;
+}
+/* Special Deals section */
+.deal-row {
+	display: flex;
+	padding: 0 10px;
+	margin: 10px 0;
+}
+.deals-grid img {
+	border: 1px solid #d3d4d8;
+}
+.deal-text {
+	padding: 0 12px;
+}
+.deal-row p:first-of-type {
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 600;
+} 
+.deal-row a {
+	font-size: 14px;
+	color: #6d6c6c;
+}
+/* Shop-Col-2 styles */
+.shop-col-2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.flat50 {
+	position: relative;
+}
+.flat50-text {
+	color: white;
+	position: absolute;
+	right: 30px;
+	top: 120px;
+}
+.flat50-text a {
+	color: white;
+}
+
+
+
 /* Responsive Styling */
 /* STYLE FOR HAMBURGER */
-@media all and (max-width: 768px) {
+	
+@media screen and (max-width: 992px) {
+	.shop-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 768px) {
 	.label {
 		display: block;
 	}
@@ -948,19 +1049,11 @@ iframe {
 		margin-bottom: 3rem;
 		display: block;
 	}
-}
-
-@media screen and (max-width: 768px) {
 	.quote {
 		width: 100%;
 	}
-	.f
 	.blog-container {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		/*grid-template-areas: 
-		"three"
-		"two"
-		"one"*/
 	}
 	footer {
 		height: 100%;
@@ -975,7 +1068,6 @@ iframe {
 		margin: 0.625rem 0.625rem;
 		padding: 0;
 		border-top: none;
-		/*padding-bottom: 20px;*/
 	}
 	.email input {
 		width: 65%;
@@ -996,16 +1088,15 @@ iframe {
 	.news-wrapper ul {
 		margin-bottom: 60px;
 	}
+	.shop-grid {
+		grid-template-columns: 1fr;
+	}
 }
 
-@media all  and (max-width: 630px) {
+@media all and (max-width: 630px) {
 	.popular-container {
 		grid-template-rows: repeat(2, 174px);
 	}
-	.banner-buttons {
-		margin-top: 20px;
-		/* padding: 12rem; */
-	}  
 	.banner {
 		background-size:cover;
 	}
@@ -1017,27 +1108,14 @@ iframe {
 	.banner-buttons {
 		padding-top: 1rem;
 		padding-bottom: 3rem;
+		margin-top: 20px;
 	}
 	 .banner-info h3 {
 		font-size: 3.0rem;
-	}  
-	/* .nav-head {
-		padding-bottom: 0;
-	} */
-	.banner-info .btn {
-		/* padding: 2px; */
-		/* margin-top: 20px; */
-		/* border-radius: 0px; */
-		/* font-weight: 600; */
-		/* margin-bottom: 10px; */
-		/* box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.5);  */
-		/*color:#ff4c4c;
-		background: #ffffff; */
 	}
 	.banner-info .read-btn {
 		background: #10A6FB;
 		color: #f7f7f7;
-		/* margin-top: 70px; */
 	} 
 	.about-container h3  {
 		font-size: 1.5rem ;
@@ -1048,7 +1126,6 @@ iframe {
 	}
 	.about-para {
 		padding: 2rem 3rem; 
-		/* letter-spacing: 1.0;*/
 	  line-height: 1.5;
 		font-size: 0.9em;
 		color: #8c9398;
@@ -1065,30 +1142,3 @@ iframe {
 		"four"
 	}
 }
-/* media query for header
-/* media query 
-
-@media all and (max-width: 1000px) {
-  .nav-head ul {
-		align-items: center;
-		flex-direction: column;
-		flex-wrap: nowrap;
-  }
-  .flex-nav li {
-    /* flex: 1 1 50%; */
- }
-}
-/* @media all and (min-width: 500px) {
-  .nav-head li{
-    flex-basis:100%; 
-	}
-	.icon-content {
-		width: 100%;
-	}
-	.nav-head ul {
-		align-items: center;
-		flex-direction: column;
-		flex-wrap: nowrap;
-  }
-}  */
-  
